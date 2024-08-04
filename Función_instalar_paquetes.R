@@ -8,7 +8,7 @@ c("DBI", "dbplyr", "tidyverse", "RMySQL", "arrow") %in%
 # función para validar si algunos paquetes de mi interés se encuentran
 # instalados, y, si no es así, que los instale.
 
-installar_paquetes <- function(paquetes) {
+instalar_paquetes <- function(paquetes) {
   if (class(paquetes) != "character") {
     "Error: proporcione un vector de caracteres"
   } else {
@@ -47,4 +47,4 @@ installar_paquetes <- function(paquetes) {
 paquetes <- c("DBI", "dbplyr", "tidyverse", "RMySQL", "arrow", "patchwork",
               "RPostgres", "x")
 
-installar_paquetes(paquetes)
+instalar_paquetes(paquetes)
